@@ -86,20 +86,82 @@ body{
         }
     }
     main{
+        section{
+            padding: 1em;
+        }
+        .weather{
+            background-color: #474747;
+            p{
+                color: @white;
+            }
+        }
         .hero{
-            background-image: url(../images/hero-temp.jpg);
-            background-size: contain;
+            height: 200px;
+        }
+        .times{
+            background-image: url(../images/bike-line.jpg);
+            background-size: cover;
             background-position: center;
-            height: 300px;
+            article{
+                background-color: @white;
+                border-radius: 10px;
+                opacity: .8;
+            }
+        }
+        .twitter-timeline{
+            max-height: 500px;
+            width: 340px;
+        }
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 4s;
+        }
+        @-webkit-keyframes fade {
+          from {opacity: .9} 
+          to {opacity: 1}
+        }
+
+        @keyframes fade {
+          from {opacity: .9} 
+          to {opacity: 1}
+        }
+        .return{
+            text-align: center;
         }
         h2{
             .headingattributes (@black; center; 2em);
             padding-bottom: .5em;
             padding-top: .5em;
         }
+        h3{
+            .headingattributes (@black; center; 1.25em);
+            padding-top: .5em;
+            padding-bottom: .5em;
+        }
         p{
             .paragraphattributes (@black; center; 1em);
             padding-bottom: 1em;
+        }
+        form{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 1em;
+            table{
+                tr{
+                    td{
+                        vertical-align: top;
+                        select{
+                            margin-bottom: 1.5em;
+                        }
+                    }
+                }
+            }
+            input{
+                margin-bottom: 1.5em;
+            }
         }
     }
     footer{
@@ -152,6 +214,17 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
             .hero{
                 height: 400px;
             }
+            form{
+                width: 50%;
+                table{
+                    tr{
+                        td{
+                            padding-right: 1em;
+                            padding-left: 1em;
+                        }
+                    }
+                }
+            }
         }
     }
     
@@ -171,6 +244,20 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
         main{
             .hero{
                 height: 600px;
+                overflow-y: hidden;
+            }
+            form{
+                width: 30%;
+                table{
+                    tr{
+                        td{
+                            select{
+                                margin-right: 20px;
+                                overflow-y: auto;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

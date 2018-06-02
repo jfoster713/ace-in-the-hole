@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<!-- 
+File Name: fom.html
+Date: 05/17/2018
+Programmer: Jeremy Braun
+-->
+<html lang="en">
+    
+    <head>
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="UTF-8">
+
+    <meta name="author" content="Jeremy Braun">
+
+    <title>Find Out More | Ace in the Hole Multisport Events</title>
+
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+
+    <link href="css/generic.css" rel="stylesheet" type="text/css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Muli|Source+Sans+Pro" rel="stylesheet">
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+        
+    </head>
+    
+    <body>
+        
+        <header>
+            
+            <a href="index.html"><img src="images/logotype.jpg"></a>
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+            
+            
+            
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="fom.html">Find Out More</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            
+            <div class="hero">
+            <img class="mySlides fade" src="images/runner-lineup.jpg">
+            <img class="mySlides fade" src="images/bike-group.jpg">
+            <img class="mySlides fade" src="images/swimmers.jpg">
+            </div>
+            
+            <section>
+            
+                <h2>Find Out More</h2>
+                
+                <p>Have any questions or comments? We'd love to hear from you!</p>
+                
+                <form method="post" name="comment-form" action="comment-form.php">
+                    
+                    <table>
+                        
+                        <tr>
+                    
+                        <td><label for="name">Name</label></td>
+
+                        <td><input type="text" id="name" name="name" required></td>
+                        
+                        </tr>
+                        
+                        <tr>
+
+                        <td><label for="e-mail">E-mail</label></td>
+
+                        <td><input type="text" id="email" name="email" required></td>
+                            
+                        </tr>
+                            
+                        <tr>
+
+                        <td><label for="role">I'm a(n)</label></td>
+
+                        <td><input type="radio" id="role" name="role" value="Athlete" required>Athlete
+                        <input type="radio" id="role" name="role" value="Volunteer">Volunteer
+                        <input type="radio" id="role" name="role" value="Other Party">Other Party
+                        </td>
+                            
+                        </tr>
+                            
+                        <tr>
+
+                        <td><label for="comment">Comment or Question</label></td>
+
+                        <td><textarea name="comment" rows="5" cols="25" required></textarea></td>
+                            
+                        </tr>   
+                        
+                        <tr>
+
+                        <td><br><input type="submit" value="Submit"></td>
+                            
+                        </tr>
+                            
+                    </table>    
+                    
+                </form>
+                
+            </section>
+            
+        </main>
+        
+        <footer>
+            
+            <section class="social">
+                
+            <p>Be sure to check us out on social media!</p>
+            
+            <a href="https://www.facebook.com/cas222cascade" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/pcccas222" class="fa fa-twitter"></a>
+                
+            </section>
+            
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcas222cascade&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            
+            <a class="twitter-timeline" data-width="340" data-height="500" href="https://twitter.com/pcccas222?ref_src=twsrc%5Etfw">Tweets by pcccas222</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            
+            <p>Ace in the Hole Multisport Events<br>
+            All Rights Reserved</p>
+            
+        </footer>
+        
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/slideshow.js"></script>
+        
+    </body>
+
+</html>
