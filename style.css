@@ -95,11 +95,56 @@ body nav li:active {
   padding: 15px 0 15px 0;
   border-bottom: #dddddd 1px solid;
 }
+body main section {
+  padding: 1em;
+}
+body main .weather {
+  background-color: #474747;
+}
+body main .weather p {
+  color: #ffffff;
+}
 body main .hero {
-  background-image: url(../images/hero-temp.jpg);
-  background-size: contain;
+  height: 200px;
+}
+body main .times {
+  background-image: url(../images/bike-line.jpg);
+  background-size: cover;
   background-position: center;
-  height: 300px;
+}
+body main .times article {
+  background-color: #ffffff;
+  border-radius: 10px;
+  opacity: .8;
+}
+body main .twitter-timeline {
+  max-height: 500px;
+  width: 340px;
+}
+body main .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 4s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.9;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.9;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body main .return {
+  text-align: center;
 }
 body main h2 {
   color: #000000;
@@ -110,11 +155,35 @@ body main h2 {
   padding-bottom: .5em;
   padding-top: .5em;
 }
+body main h3 {
+  color: #000000;
+  letter-spacing: .1em;
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
 body main p {
   color: #000000;
   text-align: center;
   font-size: 1em;
   padding-bottom: 1em;
+}
+body main form {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1em;
+}
+body main form table tr td {
+  vertical-align: top;
+}
+body main form table tr td select {
+  margin-bottom: 1.5em;
+}
+body main form input {
+  margin-bottom: 1.5em;
 }
 body footer {
   background-color: #000000;
@@ -164,6 +233,13 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
   body main .hero {
     height: 400px;
   }
+  body main form {
+    width: 50%;
+  }
+  body main form table tr td {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
 }
 /*
 
@@ -175,5 +251,13 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
 @media only screen and (min-width: 1025px) {
   body main .hero {
     height: 600px;
+    overflow-y: hidden;
+  }
+  body main form {
+    width: 30%;
+  }
+  body main form table tr td select {
+    margin-right: 20px;
+    overflow-y: auto;
   }
 }
