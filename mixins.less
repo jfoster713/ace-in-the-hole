@@ -1,0 +1,27 @@
+/* LESS Document */
+/*
+Filename: mixins.less
+Date: 05/04/2018 
+Programmer: Jeremy Braun
+*/
+// out: null
+
+.headingattributes (@fontColor; @align; @fontSize) {
+    color: @fontColor;
+    letter-spacing: .1em;
+    text-align: @align;
+    font-size: @fontSize;
+    font-weight: bold;
+}
+
+.paragraphattributes (@fontColor; @align; @fontSize) {
+    color: @fontColor;
+    text-align: @align;
+    font-size: @fontSize;
+}
+
+.bodyfontattributes (@fontColor; @fontSize) {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: @fontColor;
+    font-size: @fontSize;
+}

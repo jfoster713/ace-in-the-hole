@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<!-- 
+File Name: registration.html
+Date: 05/17/2018
+Programmer: Jeremy Braun
+-->
+<html lang="en">
+    
+    <head>
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="UTF-8">
+
+    <meta name="author" content="Jeremy Braun">
+
+    <title>Registration | Ace in the Hole Multisport Events</title>
+
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+
+    <link href="css/generic.css" rel="stylesheet" type="text/css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Muli|Source+Sans+Pro" rel="stylesheet">
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+        
+    </head>
+    
+    <body>
+        
+        <header>
+            
+            <a href="index.html"><img src="images/logotype.jpg"></a>
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+            
+            
+            
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="fom.html">Find Out More</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            
+            <div class="hero">
+            <img class="mySlides fade" src="images/runner-lineup.jpg">
+            <img class="mySlides fade" src="images/bike-group.jpg">
+            <img class="mySlides fade" src="images/swimmers.jpg">
+            </div>
+            
+            <section class="prices">
+            
+                <h2>Register for an Event</h2>
+                
+                <h3>Registration Costs</h3>
+                <p>Long Course 
+                $240	  	
+                <br>Olympic
+                $110	  	
+                <br>10K
+                $50	  	
+                <br>Half Marathon
+                $75	
+                <br>Sprint
+                $90
+                <br>Try-a-Tri
+                $65
+                </p>
+                
+                <p>Looking to participate in an event or volunteer? We'd love to have you! Please fill in your information below so you can get involved.</p>
+                <p>All fields are required!</p>
+                
+                <form method="post" name="registration-form" action="registration-email.php">
+                    
+                    <table>
+                        
+                        <tr>
+                    
+                        <td><label for="name">Name</label></td>
+
+                        <td><input type="text" id="name" name="name" required></td>
+                        
+                        </tr>
+                        
+                        <tr>
+
+                        <td><label for="email">E-mail</label></td>
+
+                        <td><input type="text" id="email" name="email" required></td>
+                            
+                        </tr>
+                            
+                        <tr>
+
+                        <td><label for="phone">Phone Number</label></td>
+
+                        <td><input type="tel" id="phone" name="phone" required></td>
+                            
+                        </tr>
+                        
+                        <tr>
+                        
+                            <td><label for="gender">Gender</label></td>
+                            
+                            <td><input type="radio" id="gender" name="gender" value="Male" required>Male
+                            <input type="radio" id="gender" name="gender" value="Female">Female<br>
+                            <input type="radio" id="gender" name="gender" value="Non-Binary">Non-Binary</td>
+                        
+                        </tr>
+                            
+                        <tr>
+
+                        <td><label for="role">I'm a(n)</label></td>
+
+                        <td><input type="radio" id="role" name="role" value="Athlete" required>Athlete
+                        <input type="radio" id="role" name="role" value="Volunteer">Volunteer</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                        
+                            <td><label for="shirt">T-Shirt Size</label></td>
+                            
+                            <td><select id="shirt" name="shirt" size="7" required>
+                                
+                                    <option value="XS">XS</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">XXL</option>
+                                    <option value="XXXL">XXXL</option>
+                                
+                                </select></td>
+                        
+                        </tr>
+                            
+                        <tr>
+
+                        <td><label for="event1">Saturday Event</label></td>
+
+                        <td><select id="event1" name="event1" size="5" required>
+
+                            <option value="Long Course Triathlon">Long Course Triathlon 7:00 AM</option>
+                            <option value="Olympic Triathlon">Olympic Triathlon 7:30 AM</option>
+                            <option value="10K">10K 7:15 AM</option>
+                            <option value="Half Marathon">Half Marathon 7:15 AM</option>
+                            <option value="None">None</option>
+
+                        </select></td>
+                            
+                        </tr>
+                        
+                        <tr>
+                        
+                            <td><label for="event2">Sunday Event</label></td>
+                            
+                            <td><select id="event2" name="event2" size="4" required>
+                                
+                                    <option value="Sprint Triathlon">Sprint Triathlon 8:00 AM</option>
+                                    <option value="Try-a-Tri">Try-a-Tri 8:20 AM</option>
+                                    <option value="Splash n Dash">Splash 'n Dash 12:00 PM</option>
+                                    <option value="None">None</option>
+                                
+                                </select></td>
+                        
+                        </tr>
+                            
+                        <tr>
+
+                        <td><label for="ename">Emergency Contact Name</label></td>
+
+                        <td><input type="text" id="ename" name="ename" required></td>
+                            
+                        </tr>    
+                        
+                        <tr>
+
+                        <td><label for="ephone">Emergency Contact Phone Number</label></td>
+
+                        <td><input type="tel" id="ephone" name="ephone" required></td>
+                            
+                        </tr>    
+                        
+                        <tr>
+
+                        <td><br><input type="submit" value="Submit"></td>
+                            
+                        </tr>
+                            
+                    </table>    
+                    
+                </form>
+                
+            </section>
+            
+        </main>
+        
+        <footer>
+            
+            <section class="social">
+                
+            <p>Be sure to check us out on social media!</p>
+            
+            <a href="https://www.facebook.com/cas222cascade" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/pcccas222" class="fa fa-twitter"></a>
+                
+            </section>
+            
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcas222cascade&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            
+            <a class="twitter-timeline" data-width="340" data-height="500" href="https://twitter.com/pcccas222?ref_src=twsrc%5Etfw">Tweets by pcccas222</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            
+            <p>Ace in the Hole Multisport Events<br>
+            All Rights Reserved</p>
+            
+        </footer>
+        
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/slideshow.js"></script>
+        
+    </body>
+
+</html>
